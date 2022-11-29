@@ -9,4 +9,5 @@
     <string name="line_break"><![CDATA[<br><br>]]></string>
     <string name="root_data_na_warn">No data available!\nDid you grant root permission?</string>
     <string name="root_na_warn">Root Not Available</string>
+    <string name="floating_button">floating_button</string>
 </resources>

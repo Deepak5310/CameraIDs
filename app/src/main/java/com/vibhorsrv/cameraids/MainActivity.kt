@@ -74,7 +74,8 @@ class MainActivity : AppCompatActivity() {
             )
         )
         val fileUri = FileProvider.getUriForFile(
-            this, applicationContext.packageName + ".provider", newFile)
+            this, applicationContext.packageName + ".provider", newFile
+        )
         if (bufferText == "") {
             contentLoadingProgressBar.show()
             stringBuilder = StringBuilder()
@@ -111,7 +112,8 @@ class MainActivity : AppCompatActivity() {
             )
         )
         val fileUri = FileProvider.getUriForFile(
-                this, "${applicationContext.packageName}.provider", newFile)
+            this, "${applicationContext.packageName}.provider", newFile
+        )
         val t = HandlerThread("CameraDumpThread")
         t.start()
         val h = Handler(t.looper)
@@ -140,7 +142,8 @@ class MainActivity : AppCompatActivity() {
                             }
                         } else {
                             Toast.makeText(
-                                this, R.string.root_data_na_warn, Toast.LENGTH_LONG)
+                                this, R.string.root_data_na_warn, Toast.LENGTH_LONG
+                            )
                                 .show()
                         }
                     }
